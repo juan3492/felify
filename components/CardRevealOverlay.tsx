@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-import { Card } from './Card';
 import { ScratchToReveal } from './magicui/scratch-to-reveal';
 
 interface CardRevealOverlayProps {
