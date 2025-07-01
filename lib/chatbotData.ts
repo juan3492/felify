@@ -6,6 +6,7 @@ export type ChatMessageType = {
     id: string;
     src: string;
     power: number;
+    name: string;
   };
   isScratchCard?: boolean;
 };
