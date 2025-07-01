@@ -3,12 +3,13 @@
 
 import { useState, useCallback } from "react";
 import { ChatMessageType, felipeResponses, getRandomResponse, feliCards } from "../lib/chatbotData";
+import type { Card } from "./useCardGame";
 import { useCardGame } from './useCardGame';
 
 // Tipos necesarios para el juego
 interface GameResult {
-  playerCard: { id: string; src: string; power: number };
-  botCard: { id: string; src: string; power: number };
+  playerCard: { id: string; src: string; power: number; name: string };
+  botCard: { id: string; src: string; power: number; name: string };
   message: string;
 }
 
@@ -46,7 +47,9 @@ export function useChat() {
         {
           message: [
             { text: "¡Mi carta es:" },
-            { cardData: revealingCard }
+            { 
+              cardData: revealingCard as Card
+            }
           ],
           isUser: true,
           time: new Date().toLocaleTimeString(),
@@ -82,7 +85,7 @@ export function useChat() {
           {
             message: [
               { text: "Mi carta es:" },
-              { cardData: currentGameResult.botCard },
+              { cardData: { ...currentGameResult.botCard, name: 'Carta de Felipe' } },
               { text: currentGameResult.message }
             ],
             isUser: false,
