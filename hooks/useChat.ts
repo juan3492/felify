@@ -85,7 +85,7 @@ export function useChat() {
           {
             message: [
               { text: "Mi carta es:" },
-              { cardData: { ...currentGameResult.botCard, name: 'Carta de Felipe' } },
+              { cardData: { ...currentGameResult.botCard, name: currentGameResult.botCard.name} },
               { text: currentGameResult.message }
             ],
             isUser: false,

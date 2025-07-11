@@ -7,10 +7,10 @@ interface QuickOptionsProps {
 
 export default function QuickOptions({ sendResponse, userName }: QuickOptionsProps) {
   const options: Record<string, string> = {
-    "¿Que haces?": "questions",
-    "Contame un chiste": "jokes",
-    "Mostrame un meme": "meme",
-    "Quiero jugar a feli cards": "play"
+    "Contame algo": "questions",
+    "Chiste": "jokes",
+    "Meme": "meme",
+    "Jugar a las cartas": "play"
   };
 
   return (

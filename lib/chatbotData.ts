@@ -41,9 +41,8 @@ export interface GameResult {
 
 // Datos de imágenes disponibles
 export const chatbotImages: Record<string, string> = {
-  welcome: '/images/welcome.png',
-  meme: '/images/meme.png',
-  cat: '/images/cat.png',
+  feliAbrazo: '/images/feli-abrazo.jpg',
+  feliAesthetic: '/images/feli-aesthetic.jpg',
 };
 
 export const chatbotMemes: Record<string, string> = {
@@ -75,37 +74,67 @@ export const felipeResponses: FelipeResponses = {
   ],
   jokes: [
     [
-      { text: "¿Quieres escuchar un chiste? 😄" },
-      { text: "¡Tengo uno genial para ti!" }
+      { text: "Iban un gato y un perro en un auto" },
+      { text: "El gato choca" },
+      { text: "El perro dice guauu q choque " },
+      { text: "el gato dice miaauuuto" },
+      { text: "JAJAJA 😹" },
     ],
     [
-      { text: "¡Tengo un chiste genial para ti!" },
-      { text: "¿Te gustan los chistes de programación?" }
+      { text: "Iba un Tigre y se comio un jabon" },
+      { text: "Y ahora espuma" },
+      { text: "Entendes? ES PUMA JAJAJAAJ 😹"}
     ],
     [
-      { text: "Aquí tienes un chiste divertido:" },
-      { text: "¡Espero que te guste!" }
-    ]
+      { text: "Por que a los gatos les gusta tanto estar en la compu?" },
+      { text: "Porque les gusta vigilar el mouse 😹" },
+    ],
+    [
+      { text: "¿Cual es el colmo de un gato?" },
+      { text: "Tener dientes caninos 😹" },
+    ],
+    [
+      { text: "¿Cual es el colmo de un gato?" },
+      
+    ],
   ],
   questions: [
     [
-      { text: "¿Quieres ver un meme?" },
-      { image: chatbotImages.meme },
-      { text: "¡Es muy divertido!" }
+      { text: "Amo dormir abrazado a mi mamá 🥰" },
+      { image: chatbotImages.feliAbrazo },
+      { text: "Especialmente en dias frios ❄❄❄❄" }
     ],
     [
-      { text: "¿Quieres escuchar un maullido?" },
-      { image: chatbotImages.cat },
-      { text: "¡Es muy tierno!" }
+      { text: "Mi hermana mayor se llama Kirara" },
+      { text: "A veces se enoja cuando quiero jugar con ella" },
     ],
     [
-      { text: "¿Quieres contarme un chiste?" },
-      { text: "¡Me encantan los buenos chistes!" }
+      { text: "Mi comida favorita son los sobrecitos Whiskas" },
+      { text: "Son riquisimos 😍" },
     ],
     [
-      { text: "¿Quieres hablar de la vida en general?" },
-      { text: "¡Siempre estoy dispuesto a conversar!" }
-    ]
+      { text: "Sabias que la flexibilidad y la agilidad de los gatos son impresionantes" },
+      { text: "podemos saltar más de 3 metros de altura 🙀" },
+      { text: "Asi que ni te molestes en poner tus cosas muy alto"},
+      { text: "Las puedo tirar igual 😹"},
+    ],
+    [
+      { text: "Sabias que no tenemos pestañas? 🙀"}
+    ],
+    [
+      { text: "Sabias que soñar con un gato blanco"},
+      { text: "Según algunas creencias, trae buena suerte"},
+      { text: "Espero que no sueñes con otros gatos 😾👊"},
+    ],
+    [
+      { text: "Sabias que los gatos tienen una capacidad de audicion de mas de 5 veces comparandola con la de los humanos? "},
+      { text: "Asi que ya me conozco todos los chismes del barrio 😹"},
+    ],
+    [
+      { text: "El otro dia mi mamá me compro una luz de colores bonitos para sacarme fotos" },
+      { image: chatbotImages.feliAesthetic },
+      { text: "Dice que me veo aesthetic 😎" },
+    ],
   ],
   meme: [
     [
@@ -144,8 +173,8 @@ export const felipeResponses: FelipeResponses = {
     [
       { text: `${getWeekDay()} de comer algo rico 🍔` },
       { image: chatbotMemes.memeDeComer },
-      {text: "Mi hermana mayor es muy linda 🥰"},
-      {text: "En especial cuando le traen su anvorguesita feliz 🥰"},
+      { text: "Mi hermana mayor es muy linda 🥰"},
+      { text: "En especial cuando le traen su anvorguesita feliz 🥰"},
     ],
     [
       { text: "Jejeje. Quiero a mi mamá solo para mí 🤗" },
